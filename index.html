@@ -16,6 +16,18 @@
 <link rel="stylesheet" href="css/nivo-lightbox.css">
 <link rel="stylesheet" href="css/nivo_themes/default/default.css">
 <link rel="stylesheet" href="css/templatemo-style.css">
+
+<!-- table css -->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="table/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="table/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="table/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="table/css/util.css">
+	<link rel="stylesheet" type="text/css" href="table/css/main.css">
+<!--===============================================================================================-->
 <!-- google web font css -->
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -267,21 +279,37 @@ function openOperation(evt, OperationName) {
           </ul>
           <div class="iso-box-section">
             <div class="iso-box-wrapper col4-iso-box">
-              <div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/1.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/2.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/3.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/4.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/5.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box twist cutting col-md-4 col-sm-4 col-xs-12"><a href="images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/6.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box cutting col-md-4 col-sm-4 col-xs-12"><a href="images/7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/7.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/8.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-			  <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/9.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/9.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/10.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/10.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-			  <div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/11.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/11.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/12.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/12.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/14.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/14.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-			  <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/15.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/15.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
-              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/16.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/16.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12">
+					<a href="images/1.jpg" data-lightbox-gallery="portfolio-gallery">
+						<img src="images/1.jpg" style="border:outset; color: #cad1db" alt="portfolio img">
+					</a>
+					<div class="add_to_cart" id="0" onclick="add_to_cart_table(id)">
+						<img src="images/add_to_cart.png" style="width=50px" alt="portfolio img">
+					</div>
+				</div>
+				
+				<div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12">
+					<a href="images/1.jpg" data-lightbox-gallery="portfolio-gallery">
+						<img src="images/1.jpg" style="border:outset; color: #cad1db" alt="portfolio img">
+					</a>
+					<div class="add_to_cart" id="1" onclick="add_to_cart_table(id)">
+						<img src="images/add_to_cart.png" style="width=50px" alt="portfolio img">
+					</div>
+				</div>
+				<div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/2.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/3.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/4.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/5.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist cutting col-md-4 col-sm-4 col-xs-12"><a href="images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/6.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box cutting col-md-4 col-sm-4 col-xs-12"><a href="images/7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/7.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/8.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/9.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/9.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/10.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/10.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/11.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/11.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/12.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/12.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/14.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/14.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/15.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/15.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+				<div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/16.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/16.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
             </div>
           </div>
         </div>
@@ -290,6 +318,85 @@ function openOperation(evt, OperationName) {
   </div>
 </div>
 
+			<!-- divider section -->
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-10 col-sm-10">
+				  <hr>
+				</div>
+				<div class="col-md-1 col-sm-1"></div>
+			  </div>
+			</div>
+			<!-- items section -->
+			<div id="selected_items" style="display:none;">
+			  <div class="container">
+				<div class="table-row">
+				  <div class="col-md-12 col-sm-12">
+					<h2>Selected items</h2>
+				  </div>
+				  <div id="content_table">
+						<div class="limiter">
+							<div class="container-table100">
+								<div class="wrap-table100">
+										<div class="table">
+
+											<div class="table-row header">
+												<div class="cell">
+													Item Name
+												</div>
+												<div class="cell">
+													Item Price
+												</div>
+											</div>
+
+											<div class="table-row">
+												<div class="cell" data-title="Item Name">
+													Vincent Williamson
+												</div>
+												<div class="cell" data-title="Item Price">
+													31
+												</div>
+											</div>
+
+											<div class="table-row">
+												<div class="cell" data-title="Item Name">
+													Joseph Smith
+												</div>
+												<div class="cell" data-title="Item Price">
+													27
+												</div>
+											</div>
+
+											<div class="table-row">
+												<div class="cell" data-title="Item Name">
+													Justin Black
+												</div>
+												<div class="cell" data-title="Item Price">
+													26
+												</div>
+											</div>
+
+											<div class="table-row">
+												<div class="cell" data-title="Item Name">
+													Sean Guzman
+												</div>
+												<div class="cell" data-title="Item Price">
+													25
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+<!--
+			<a href ="#" id="load_home" onclick="import_cart_table()"> IMPORT HTML </a>
+			<div id ="import_content"></div>
+-->
 <!-- divider section -->
 <div class="container">
   <div class="row">
@@ -427,5 +534,7 @@ function openOperation(evt, OperationName) {
 <script src="js/isotope.js"></script>
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/cart.js"></script>
+<script type="text/javascript" src="js/items.json"></script>
 </body>
 </html>
